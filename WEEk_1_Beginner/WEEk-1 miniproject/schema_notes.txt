@@ -1,0 +1,15 @@
+The database is divided into four tables: customers, orders, products and order_items.
+
+The customers table stores customer details separately using customer_id as the Primary Key.
+
+The orders table stores order details and uses customer_id as a Foreign Key to connect each order with a customer.
+
+The products table stores product details separately using product_id as the Primary Key.
+
+The order_items table connects orders and products using order_id and product_id as Foreign Keys.
+
+Repeating product details in orders are avoided by storing individual products and their quantities in order_items.
+
+This design avoids duplicate customer and product information and reduces insertion, update and deletion anomalies.
+
+The tables follow 3NF by keeping attributes in their respective tables and avoiding partial and transitive dependencies.

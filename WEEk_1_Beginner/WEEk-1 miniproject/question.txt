@@ -1,0 +1,56 @@
+
+04 
+
+SQL E-commerce Report (Beginner Queries) 
+
+Stack: SQL -- Week 4 skills 
+
+Overview 
+
+Query a sample e-commerce database using Week 4 SQL skills. Write 35+ queries covering SELECT, JOINs, NULL handling, aggregates, subqueries, EXISTS/NOT EXISTS, DDL constraints, and normalization. Submitted as a .sql file with comments. 
+
+Learning Objectives 
+
+Write complex SELECT queries with filtering, ordering, and aliases 
+
+Handle NULL values correctly with COALESCE, NULLIF, and IS NULL 
+
+Join multiple tables using INNER, LEFT, and FULL OUTER JOINs 
+
+Use EXISTS and NOT EXISTS for semi-joins and anti-joins 
+
+Design a normalized 3NF schema and write CREATE TABLE DDL 
+
+What to Build 
+
+Set up the sample e-commerce database using the provided seed.sql (or create your own: 5 customers, 20 orders, 10 products). 
+
+Write 10 SELECT queries: aliases, WHERE filters, ORDER BY, LIMIT, and NULL handling (COALESCE, NULLIF, IS NULL). 
+
+Write 8 JOIN queries: INNER, LEFT (with 0-count), FULL OUTER example. 
+
+Write 8 aggregate queries: revenue by city, monthly totals, customer averages with HAVING. 
+
+Write 6 subquery queries: scalar subquery, correlated, EXISTS, NOT EXISTS, and derived table. 
+
+Write 3 DDL statements: CREATE TABLE for a new table, ALTER TABLE to add column and constraint, explain 3NF redesign. 
+
+For each category, include at least 1 question with output prediction as a comment. 
+
+Deliverables 
+
+week4_queries.sql with all 35+ queries, each preceded by a comment explaining what it does and the expected output 
+
+schema_notes.txt (5-10 lines) describing your 3NF redesign and violations fixed 
+
+Evaluation Criteria 
+
+All queries run without syntax errors 
+
+NULL handling is correct 
+
+JOIN types are used correctly 
+
+DDL constraints are valid and meaningful 
+
+Queries are readable with comments and expected output noted 
