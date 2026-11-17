@@ -127,3 +127,15 @@ FROM customer c LEFT JOIN orders o ON c.id = o.customer_id
 UNION
 SELECT c.id AS customer_id, c.name, o.id AS order_id, o.total_amount
 FROM customer c RIGHT JOIN orders o ON c.id = o.customer_id;
+
+/*(e) Predict the result set:
+-- customers: (1,'Alice'),(2,'Bob'),(3,'Carol')
+-- orders: (101,1,500),(102,1,300) 
+SELECT c.name, COUNT(o.id) AS order_count FROM customers c LEFT JOIN orders o ON c.id=o.customer_id 
+GROUP BY c.name ORDER BY c.name; 
+
+c.name  order_count 
+ALice   2
+Bob     0
+Carol   0
+*/

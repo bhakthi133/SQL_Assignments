@@ -81,3 +81,12 @@ d)
 ALTER TABLE customers ADD phone_number VARCHAR(15);
 ALTER TABLE customers ADD CONSTRAINT unique_email UNIQUE (email);
 ALTER TABLE products ADD CONSTRAINT chk_product_price CHECK (price > 0);
+
+
+/*(e) Predict which INSERT statements succeed or fail: 
+CREATE TABLE emp(id INT PRIMARY KEY, name VARCHAR(50) NOT NULL, sal DECIMAL CHECK(sal>0)); 
+INSERT INTO emp VALUES (1,'Alice',50000); => Suceed
+-- A INSERT INTO emp VALUES (2,NULL,60000); => Failure because the name have the not null constraint
+-- B INSERT INTO emp VALUES (3,'Bob',-100); => Failure because the sal have the check constarint of sal>0 
+
+*/

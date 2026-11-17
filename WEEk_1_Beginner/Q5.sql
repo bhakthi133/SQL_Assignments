@@ -90,3 +90,11 @@ case
     else 'Budeget'
     end as price_categoory
 FROM products p INNER JOIN order_items oi ON p.id = oi.product_id;
+
+/*(e) Predict the result set: 
+-- customer: id=1, name='john doe', email='john.doe@gmail.com' 
+SELECT UPPER(name) AS name, LOWER(email) AS email,   SPLIT_PART(email,'@',2) AS domain 
+FROM customers WHERE id=1; 
+name           email               domain
+JOHN DOE  john.doe@gmail.com  john.doe@gmail.com
+*/

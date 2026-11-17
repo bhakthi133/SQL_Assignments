@@ -74,3 +74,13 @@ select avg(total_amount),customer_id,count(*) from orderss
 group by customer_id having avg(total_amount)>500 and count(*)>3;
 
 select MONTH(order_date),count(distinct customer_id) from orderss where YEAR(order_date)=2024 group by MONTH(order_date);
+
+/*(e) Predict the result set: -- 
+orders: (1,'Mumbai',500),(2,'Mumbai',300),(3,'Delhi',800),(4,'Delhi',400),(5,'Mumbai',700) 
+SELECT city, COUNT(*) cnt, SUM(total_amount) rev 
+FROM orders GROUP BY city HAVING SUM(total_amount)>1000 ORDER BY rev DESC; 
+
+city    cnt      rev
+Mumbai  3       1500
+delhi   2       1200
+*/
